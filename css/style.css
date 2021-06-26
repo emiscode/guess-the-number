@@ -221,6 +221,16 @@ button {
   color: #fff;
 }
 
+.text-github {
+  float: right;
+  font-size: 1.1vh;
+  color: #0effffff;
+}
+
+.text-github:::visited {
+  color: #0effffff;
+}
+
 @media screen and (max-width: 1023px) {
   * {
     font-size: 1.5vh !important;
@@ -295,5 +305,13 @@ button {
   #btn-check,
   #btn-restart {
     width: auto;
+  }
+
+  .text-github {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: 1vh !important;
   }
 }
