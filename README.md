@@ -3,3 +3,5 @@
 
 There are three different levels of play that vary the range of numbers, and adds or removes some game mechanics, such as a timer, a tracking for the numbers that you already choose, and the amount of attempts you may spend trying to guess the number.
 
+[DEMO](https://emiscode-guess-the-number.herokuapp.com/)
+
