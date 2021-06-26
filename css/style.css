@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: PressStart;
+  src: url(../fonts/PressStart.ttf) format('truetype');
+}
+
+body {
+  color: #fff;
+  background: #040714ff;
+  font-family: PressStart, sans-serif;
+}
+
+.box-screen {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: absolute;
+}
+
+.box-main {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box-content {
+  margin: auto;
+  padding: 25px;
+  min-width: 1000px;
+  max-width: 1000px;
+  width: fit-content;
+  border-radius: 5px;
+  word-wrap: break-word;
+  border: 2px solid #ffa50eff;
+}
+
+.game-title {
+  margin-top: 5px;
+  color: #ffa50eff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.text-select-game-level {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.section-game-level {
+  margin-bottom: 30px;
+}
+
+.box-input-levels {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#text-game-level {
+  font-size: 14px;
+}
+
+#text-game-level::before {
+  content: '📜';
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.text-best-result {
+  font-size: 14px;
+}
+
+.text-best-result::before {
+  content: '🏆';
+  font-size: 20px;
+  margin-right: -5px;
+}
+
+.game-status {
+  font-size: 14px;
+  margin-top: 25px;
+  line-height: 20px;
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-left: 15px;
+  padding-bottom: 1px;
+  color: #333333ff;
+  margin-bottom: 25px;
+  width: 100% !important;
+  background: #000000ff;
+  border: 1px solid #ffa50eff;
+}
+
+.game-status-play {
+  color: #0effffff;
+}
+
+#text-easy {
+  color: #3dff6eff;
+}
+
+#text-normal {
+  color: #3dd1ffff;
+}
+
+#text-hard {
+  color: #ff433dff;
+}
+
+.text-game-status::before {
+  content: '💬';
+  font-size: 20px;
+  margin-right: -5px;
+}
+
+.text-attempts::before {
+  content: '❤️';
+  font-size: 20px;
+  margin-right: -5px;
+}
+
+.text-tracking::before {
+  content: '🔢';
+  font-size: 20px;
+  margin-right: -5px;
+}
+
+.text-remaining-time::before {
+  content: '⏲️';
+  font-size: 20px;
+  margin-right: -5px;
+}
+
+input[type='radio'],
+.btn-radio {
+  cursor: pointer;
+}
+
+.btn-radio {
+  margin-left: -8px;
+  margin-right: 12px;
+}
+
+.btn-radio-disabled {
+  color: #333333ff !important;
+}
+
+.btn-radio-selected {
+  text-decoration: overline underline !important;
+}
+
+.icon-best-result {
+  font-size: 20px;
+  margin-right: -5px;
+}
+
+.icon-game-level {
+  float: left;
+  font-size: 20px;
+}
+
+button {
+  width: 120px;
+  font-family: PressStart, sans-serif;
+  padding: 8px;
+}
+
+#btn-play {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  color: #040714ff;
+  background: #0effffff;
+}
+
+.btn-play-disabled {
+  background: #333333ff !important;
+}
+
+#btn-check,
+#btn-restart {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #040714ff;
+  background: #333333ff;
+}
+
+.btn-check-enabled,
+.btn-restart-enabled {
+  background: #0effffff !important;
+}
+
+.btn-restart-enabled {
+  background: #ff433dff !important;
+}
+
+#input-guess {
+  width: 150px;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #040714ff;
+  font-family: PressStart, sans-serif;
+}
+
+#text-tracking {
+  font-size: 12px;
+  color: #ff433dff;
+}
+
+.text-tracking-disabled {
+  color: #333333ff !important;
+}
+
+#text-message {
+  color: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  * {
+    font-size: 1.5vh !important;
+  }
+
+  #game-status {
+    width: 300px;
+    padding-left: 8px;
+  }
+
+  .box-content {
+    padding: 20px;
+    min-width: 300px;
+  }
+
+  .box-main {
+    padding: 10px;
+  }
+
+  .game-title {
+    text-align: center;
+    font-size: 2.2vh !important;
+  }
+
+  .text-select-game-level {
+    text-align: center;
+  }
+
+  .btn-radio {
+    margin-right: 0;
+  }
+
+  .box-input-levels {
+    text-align: center;
+  }
+
+  #text-game-level,
+  .text-best-result {
+    line-height: 25px;
+  }
+
+  .text-best-result {
+    height: 50px;
+  }
+
+  .section-game-level {
+    margin-bottom: 0;
+  }
+
+  #input-guess {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+
+  #btn-play {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .text-tracking {
+    height: 100px;
+    max-width: 280px;
+    line-height: 25px;
+    word-wrap: break-word;
+  }
+
+  .text-game-status {
+    height: 50px;
+    line-height: 25px;
+  }
+
+  #btn-check,
+  #btn-restart {
+    width: auto;
+  }
+}

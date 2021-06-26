@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Guess The Number</title>
+  </head>
+  <body>
+    <div class="box-screen">
+      <div class="box-main">
+        <div class="box-content">
+          <h1 class="game-title">Guess The Number</h1>
+
+          <section class="section-game-level">
+            <p class="text-select-game-level">Select the game level</p>
+
+            <div class="box-input-levels">
+              <input
+                type="radio"
+                name="input-game-level"
+                id="easy"
+                value="easy"
+              />
+              <label for="easy" id="text-easy" class="btn-radio">Easy</label>
+
+              <input
+                type="radio"
+                name="input-game-level"
+                id="normal"
+                value="normal"
+              />
+              <label for="normal" id="text-normal" class="btn-radio"
+                >Normal</label
+              >
+
+              <input
+                type="radio"
+                name="input-game-level"
+                id="hard"
+                value="hard"
+              />
+              <label for="hard" id="text-hard" class="btn-radio">Hard</label>
+            </div>
+
+            <p id="text-game-level">{{text-game-level}}</p>
+            <p class="text-best-result">
+              Best result: <span id="text-best-result"></span>
+            </p>
+          </section>
+
+          <div><button id="btn-play">Play</button>
+
+          <section class="game-status" id="game-status">
+            <p class="text-remaining-time">
+              Remaining Time: <span id="text-timer">00:00</span>
+            </p>
+            <p class="text-tracking">
+              Tracking: <span id="text-tracking"></span>
+            </p>
+            <p class="text-attempts">
+              Attempts: <span id="text-attempts"></span>
+            </p>
+            <p class="text-game-status">
+              Message: <span id="text-message"></span>
+            </p>
+          </section>
+
+          <input id="input-guess" type="number"" />
+          <button id="btn-check">Check</button>
+          <button id="btn-restart">Restart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
