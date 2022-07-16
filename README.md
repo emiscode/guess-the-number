@@ -5,3 +5,14 @@ There are three different levels of play that vary the range of numbers, and add
 
 [DEMO](https://emiscode-guess-the-number.herokuapp.com/)
 
+run local with docker:
+
+```bash
+docker build . -t guess-the-number
+```
+
+```bbash
+docker run -d -p 8090:80 guess-the-number
+```
+
+In the browser go to http://localhost:8090
